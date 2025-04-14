@@ -1,0 +1,24 @@
+version: 2
+
+models:
+  - name: obt_sales
+    description: "Sales order data with value category (High/Low) based on sold amount."
+    columns:
+      - name: orderid
+        description: "Order ID."
+      - name: employeeid
+        description: "Employee ID who processed the order."
+      - name: customerid
+        description: "Customer ID who placed the order."
+      - name: productid
+        description: "Product ID of the item sold."
+      - name: quantity
+        description: "Quantity of the product sold."
+      - name: extendedpriceamount
+        description: "Total price before discount."
+      - name: discountamount
+        description: "Amount discounted from the total."
+      - name: soldamount
+        description: "Amount after applying the discount."
+      - name: order_value_category
+        description: "Category of the order (High/Low) based on the sold amount."

@@ -1,0 +1,25 @@
+version: 2
+
+models:
+  - name: fact_sales
+    description: "Fact table for sales transactions, including order details, discounts, and amounts."
+    columns:
+      - name: employeeid
+        description: "ID of the employee who processed the order."
+      - name: customerid
+        description: "ID of the customer placing the order."
+      - name: orderdate
+        description: "The date the order was placed."
+      - name: productid
+        description: "ID of the product ordered."
+      - name: orderid
+        description: "Unique identifier for the order."
+      - name: quantity
+        description: "Quantity of the product ordered."
+      - name: extendedpriceamount
+        description: "Total amount for the product ordered before discount."
+      - name: discountamount
+        description: "Amount discounted from the total order price."
+      - name: soldamount
+        description: "Total amount after discount (final sales amount)."
+
