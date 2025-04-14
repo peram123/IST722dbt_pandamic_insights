@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: dim_product
+    description: "Product dimension table"
+    columns:
+      - name: supplier_key
+        description: "Foreign key to supplier"
+        tests:
+          - relationships:
+              to: ref('dim_supplier')
+              field: supplier_id
