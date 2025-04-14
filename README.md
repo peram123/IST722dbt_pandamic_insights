@@ -1,2 +1,2 @@
-# IST722dbt_pandamic_insights
+# IST722dbt
 IST722_DBT for pandemic Insights
