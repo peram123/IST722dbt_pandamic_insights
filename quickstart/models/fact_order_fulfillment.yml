@@ -1,0 +1,24 @@
+version: 2
+
+models:
+  - name: fact_order_fulfillment
+    description: Fact table containing order line details and keys to dimensions
+    columns:
+      - name: orderid
+        description: Order identifier
+      - name: orderdate
+        description: Date of the order
+      - name: customerkey
+        description: Foreign key to dim_customer
+      - name: employeekey
+        description: Foreign key to dim_employee
+      - name: productid
+        description: Foreign key to product dimension (to be built later)
+      - name: unitprice
+        description: Price per unit at the time of order
+      - name: quantity
+        description: Number of units ordered
+      - name: discount
+        description: Discount applied
+      - name: total_price
+        description: Calculated as unitprice * quantity * (1 - discount)

@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: dim_customer
+    description: Dimension table for customers
+    columns:
+      - name: customerkey
+        description: Surrogate key
+        tests:
+          - not_null
+          - unique
+      - name: companyname
+        description: Name of the customer
+      - name: contactname
+        description: Contact person
+      - name: country
+        description: Customer’s country

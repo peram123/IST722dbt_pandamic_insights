@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: dim_employee
+    description: Dimension table for employees
+    columns:
+      - name: employeekey
+        description: Surrogate key
+        tests:
+          - not_null
+          - unique
+      - name: fullname
+        description: First and last name
+      - name: title
+        description: Job title
+      - name: country
+        description: Employee’s country
